@@ -38,8 +38,8 @@ const DecisionsSection = () => {
           </h2>
 
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Focus on what matters - let us handle the <br /> busywork while you build
-            better relationships.
+            Focus on what matters - let us handle the <br /> busywork while you
+            build better relationships.
           </p>
         </div>
 
@@ -54,64 +54,85 @@ const DecisionsSection = () => {
               <img
                 src="./home-women.avif"
                 alt="Candidate"
-                className="w-72 h-96 sm:w-80 sm:h-[28rem] object-cover rounded-2xl mx-auto" // Increased image size
+                className="w-[20rem] h-120 sm:w-[28rem] sm:h-[35rem] object-cover rounded-2xl mx-auto"
               />
               {/* Floating elements */}
-              <div className="absolute top-4 sm:top-8 left-4 sm:left-8 bg-limeSoft text-lime-900 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium">
+              {/* Notification Badge */}
+              <div className="absolute top-6 sm:top-12 left-12 sm:left-32 bg-limeSoft text-lime-900 px-3 py-2 rounded-lg text-xs sm:text-sm font-medium">
                 😊 New candidate found
               </div>
               {/* First card */}
-              <div className="absolute top-12 sm:top-20 left-4 sm:left-8 rounded-lg p-3 sm:p-4 max-w-md">
-                <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3">
-                  <div>
-                    <div className="flex items-center space-x-2 mb-2">
-                      <div className="text-sm font-medium">CV recognition</div>
-                      <div className="text-xs text-gray-500 border border-gray-200 px-2 py-1 rounded">
-                        AI
+              <div className="absolute top-12 sm:top-20 left-12 sm:left-32 rounded-lg p-1 sm:p-1 w-[16rem]">
+                <div className="w-full bg-white rounded-lg p-1 shadow-lg flex flex-col space-y-2">
+                  <div className="flex flex-row justify-between">
+                    <div className="flex justify-start items-center space-x-2">
+                      <img
+                        src="./icon-scanner.png"
+                        alt=""
+                        className="h-4 w-4 bg-limeSoft p-0.5"
+                      />
+                      <div className="text-sm font-semibold">
+                        CV recognition
                       </div>
                     </div>
-                    <hr />
-                    <div className="text-xs text-gray-500">
-                      Analyse experience in Area
+                    <div className="text-xs text-gray-500 border border-gray-200 px-2 py-1 rounded">
+                      AI
                     </div>
+                  </div>
+
+                  <hr className="w-full" />
+                  <div className="text-xs text-gray-500 p-1">
+                    Analyse experience in Area
                   </div>
                 </div>
               </div>
               {/* Second card */}
-              <div className="absolute top-[11rem] sm:top-[10rem] left-4 sm:left-8 rounded-lg p-3 sm:p-4 max-w-md opacity-40">
-                <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3">
-                  <div>
-                    <div className="flex items-center space-x-2 mb-2">
-                      <div className="text-sm font-medium max-w-[12rem] opacity-100">
-                        Yes, Chris has 3 years of experience in SaaS for
-                        Healthcare
-                      </div>
-                    </div>
+              <div className="absolute top-[11rem] sm:top-[10rem] left-12 sm:left-36 rounded-lg p-3 sm:p-4 w-[16rem] opacity-40">
+                <div className="w-full bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3">
+                  <img
+                    src="./icon-star.png"
+                    alt=""
+                    className="h-4 w-4 self-start"
+                  />
+                  <div className="text-sm text-gray-900 font-medium opacity-100">
+                    Yes, Chris has 3 years of experience in{" "}
+                    <span className="font-bold">SaaS for Healthcare</span>
                   </div>
                 </div>
               </div>
               {/* Third card */}
-              <div className="absolute top-[19rem] sm:top-[17rem] left-4 sm:left-8 rounded-lg p-3 sm:p-4 max-w-md">
-                <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3">
-                  <div>
-                    <div className="flex items-center space-x-2 mb-2">
-                      <div className="text-sm font-medium">Compatibility</div>
-                      <div className="text-xs text-gray-500 border border-gray-200 px-2 py-1 rounded">
-                        AI
-                      </div>
+              <div className="absolute top-[19rem] sm:top-[17rem] left-12 sm:left-32 rounded-lg p-1 sm:p-1 w-[16rem]">
+                <div className="w-full bg-white rounded-lg p-1 shadow-lg flex flex-col space-y-2">
+                  <div className="flex flex-row justify-between">
+                    <div className="flex justify-start items-center space-x-2">
+                      <img
+                        src="./icon-link.png"
+                        alt=""
+                        className="h-4 w-4 bg-limeSoft p-0.5"
+                      />
+                      <div className="text-sm font-semibold">Compatibility</div>
                     </div>
-                    <hr />
-                    <div className="text-xs text-gray-500">
-                      Analyse experience in Area
+                    <div className="text-xs text-gray-500 border border-gray-200 px-2 py-1 rounded">
+                      AI
                     </div>
+                  </div>
+
+                  <hr className="w-full" />
+                  <div className="text-xs text-gray-500 p-1">
+                    Analyse experience in Area
                   </div>
                 </div>
               </div>
               {/* Fourth card */}
-              <div className="absolute top-[27rem] sm:top-[23rem] left-4 sm:left-8 rounded-lg p-3 sm:p-4 max-w-md opacity-40">
+              <div className="absolute top-[27rem] sm:top-[23rem] left-12 sm:left-32 rounded-lg p-3 sm:p-4 max-w-md opacity-40">
                 <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3">
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
+                      <img
+                        src="./icon-star.png"
+                        alt=""
+                        className="h-4 w-4 self-start"
+                      />
                       <div className="text-sm font-medium max-w-[12rem] opacity-100">
                         2 years working on healthcare and improving{" "}
                         <b>Leadership skills</b>
@@ -121,10 +142,15 @@ const DecisionsSection = () => {
                 </div>
               </div>
               {/* Fifth card */}
-              <div className="absolute top-[35rem] sm:top-[29rem] left-4 sm:left-8 rounded-lg p-3 sm:p-4 max-w-md opacity-40">
+              <div className="absolute top-[35rem] sm:top-[29rem] left-12 sm:left-32 rounded-lg p-3 sm:p-4 max-w-md opacity-40">
                 <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3">
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
+                      <img
+                        src="./icon-star.png"
+                        alt=""
+                        className="h-4 w-4 self-start"
+                      />
                       <div className="text-sm font-medium max-w-[12rem] opacity-100">
                         Masters in <b>Computer Science</b>
                       </div>
@@ -133,8 +159,8 @@ const DecisionsSection = () => {
                 </div>
               </div>
               {/* Right side candidate list */}
-              <div className="absolute top-4 sm:top-8 right-4 sm:right-8 space-y-3 hidden sm:block">
-                <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3 opacity-30">
+              <div className="absolute top-4 sm:top-8 right-4 sm:right-8 w-[200px] space-y-3 hidden sm:block">
+                <div className="absolute top-10 right-[220px] w-full bg-white rounded-lg p-2 shadow-lg flex items-center space-x-3 opacity-30">
                   <img
                     src="./home-women-2.avif"
                     alt="Danielle"
@@ -150,7 +176,7 @@ const DecisionsSection = () => {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3 opacity-50">
+                <div className="absolute top-[90px] right-[220px] w-full bg-white rounded-lg p-2 shadow-lg flex items-center space-x-3 opacity-50">
                   <img
                     src="./feature-men.avif"
                     alt="Dennis"
@@ -159,12 +185,12 @@ const DecisionsSection = () => {
                   <div>
                     <div className="text-sm font-medium">Dennis Howell</div>
                     <div className="text-xs text-gray-500">
-                      Staff Software Engineer
+                      Staff Engineer @Crown
                     </div>
                   </div>
                 </div>
 
-                <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3 opacity-70">
+                <div className="absolute top-[150px] right-[220px] w-full bg-white rounded-lg p-2 shadow-lg flex items-center space-x-3 opacity-70">
                   <img
                     src="./home-women.avif"
                     alt="Camilla"
