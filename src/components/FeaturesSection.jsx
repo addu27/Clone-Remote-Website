@@ -6,7 +6,7 @@ import { motion } from "motion/react";
 const FeaturesSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
           <div className="inline-flex items-center justify-center w-40 h-40 sm:w-16 sm:h-16 mb-6 sm:mb-8">

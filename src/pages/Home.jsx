@@ -13,20 +13,23 @@ import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 import FixedSidebar from '../components/FixedSidebar';
 
+
 function Home() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <HeroSection />
-      <TrustSection />
-      <FeaturesSection />
-      <ActivityFeedSection />
-      <GrowthSection />
-      <IntegrationsSection />
-      <DecisionsSection />
-      <PricingSection />
-      <GlobalSection />
-      <CTASection />
+      <div className="max-w-[1200px] mx-auto">
+        <HeroSection />
+        <TrustSection />
+        <FeaturesSection />
+        <ActivityFeedSection />
+        <GrowthSection />
+        <IntegrationsSection />
+        <DecisionsSection />
+        <PricingSection />
+        <GlobalSection />
+        <CTASection />
+      </div>
       <Footer />
       <FixedSidebar />
     </div>

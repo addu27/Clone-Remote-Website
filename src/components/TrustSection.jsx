@@ -3,7 +3,7 @@ import React from "react";
 const TrustSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-[1200px] mx-auto text-center">
         <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
           16,000+ small and medium businesses trust Remote
         </p>

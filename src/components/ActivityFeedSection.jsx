@@ -4,7 +4,7 @@ import { RefreshCw, Users, FileText, BarChart3, Settings } from "lucide-react";
 const ActivityFeedSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left side - Activity feed mockup */}
           <div className="bg-limeSoft p-6 sm:p-8 rounded-3xl order-2 lg:order-1">

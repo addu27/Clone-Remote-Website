@@ -3,7 +3,7 @@ import React from "react";
 const GlobalSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="flex text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 leading-tight">
             Remote is the global &nbsp;&nbsp;&nbsp; <br />

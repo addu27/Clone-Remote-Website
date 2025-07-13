@@ -26,7 +26,7 @@ const Contact = () => {
 
       {/* Hero Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1200px] mx-auto text-center">
           {/* Chat Icon */}
           <div className="mb-8 sm:mb-12">
             <div className="w-28 h-24 sm:w-32 sm:h-32 mx-auto flex items-center justify-center">

@@ -4,7 +4,7 @@ import { Users, TrendingUp, BarChart3, Clock, ChevronRight, ChevronDown } from '
 const GrowthSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left side - Content */}
           <div className="order-2 lg:order-1">

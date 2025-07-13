@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 const AnnouncementBanner = () => {
   return (
     <motion.div
-      className="group border border-lime-200 rounded-full px-4 sm:px-3 py-1 inline-flex items-center space-x-2 sm:space-x-3 mx-auto mb-6 sm:mb-8 max-w-full hover:bg-limeSoft transition-colors"
+      className="group border border-lime-200 rounded-full pl-1 pr-2 sm:px-1 inline-flex items-center space-x-2 sm:space-x-3 mx-auto mb-6 sm:mb-5 max-w-full hover:bg-limeSoft transition-colors"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.5 }}

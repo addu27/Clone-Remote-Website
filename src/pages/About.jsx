@@ -13,7 +13,7 @@ const About = () => {
 
       {/* Hero Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1200px] mx-auto text-center">
           {/* Illustration */}
           <div className="mb-8 sm:mb-12">
             <div className="w-40 h-40 sm:w-60 sm:h-60 mx-auto flex items-center justify-center">
@@ -52,7 +52,7 @@ const About = () => {
 
       {/* Our Story Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             {/* Left side - Our Story */}
             <div>

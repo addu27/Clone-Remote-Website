@@ -33,7 +33,7 @@ const Pricing = () => {
 
       {/* Hero Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1200px] mx-auto text-center">
           <motion.h1
             className="text-3xl sm:text-5xl lg:text-6xl xl:text-5xl text-gray-900 mb-6 leading-tight"
             initial={{ opacity: 0 }}
@@ -49,7 +49,7 @@ const Pricing = () => {
 
       {/* Pricing Cards Section */}
       <section className="bg-white py-12 sm:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-[1200px] mx-auto">
           <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
             {/* Remote Free */}
             <motion.div

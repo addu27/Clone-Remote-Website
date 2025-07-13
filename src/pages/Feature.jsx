@@ -13,7 +13,7 @@ const Feature = () => {
 
       {/* Hero Section */}
       <section className="bg-white py-10 sm:py-14 lg:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1200px] mx-auto text-center">
           {/* Handshake Illustration */}
           <div>
             <div>
@@ -57,7 +57,7 @@ const Feature = () => {
 
       {/* Signatures Section */}
       <section className="bg-white py-6 sm:py-10 lg:py-12 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto text-center">
+        <div className="max-w-[1200px] mx-auto text-center">
           <div className="text-sm text-gray-500 uppercase tracking-wide mb-6">
             SIGNATURES
           </div>

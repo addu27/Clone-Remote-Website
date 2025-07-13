@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 const IntegrationsSection = () => {
   return (
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-[1200px] mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
           Less paperwork,<br />
           more <span className="bg-limeSoft px-2 py-1 rounded-lg">people work</span>

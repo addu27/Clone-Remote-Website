@@ -6,32 +6,61 @@ import "../index.css";
 const HeroSection = () => {
   return (
     <section className="bg-white py-8 sm:py-12 lg:py-16 xl:py-20 px-4 sm:px-6">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-[1200px] mx-auto">
         {/* Main Hero Content */}
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 mb-12 sm:mb-16 lg:mb-20">
+        <div
+          className="flex flex-row lg:flex-row items-evenly justify-start gap-4 lg:gap-8 mb-12 sm:mb-16 lg:mb-20 
+             flex-none flex-nowrap h-min max-w-[1200px] overflow-visible p-0 relative w-full z-20"
+        >
+          <div className="h-[250px] w-[300px] z-0">
+            <img
+              src="./home-main.png"
+              alt="home-image"
+              className="w-full h-full relative left-0 bottom-[-110px] "
+            />
+          </div>
+
           {/* Center - Main content */}
-          <div className="w-full lg:w-1/3 text-center order-1 lg:order-2">
+          <div className=" w-full lg:w-1/3 text-center order-1 lg:order-2">
             <AnnouncementBanner />
 
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-gray-900 mb-6 sm:mb-8 leading-tight">
+            <h1 className="block w-full break-words overflow-wrap break-word whitespace-pre-line text-center font-onest text-[70px] font-medium not-italic tracking-[-0.02em] leading-[1em] text-[rgb(31,34,35)] mb-6 sm:mb-8">
               Say hello to
               <br />
-              <span className="whitespace-nowrap">
-                <span className="relative inline-block">
+              <span className="whitespace-nowrap flex justify-center items-center">
+                <span
+                  className="relative inline-block px-2 py-1"
+                  style={{ zIndex: 1 }}
+                >
+                  {/* Masked background */}
                   <span
-                    className="absolute inset-0 bg-limeSoft -skew-y-2 rounded-md"
-                    style={{ zIndex: 0 }}
+                    className="absolute inset-0"
+                    style={{
+                      background:
+                        "var(--token-50f7c55d-562d-4beb-9e4e-86ed7b4f818d, rgb(224, 255, 130))",
+                      WebkitMaskImage: 'url("https://iili.io/3QeNmOX.png")',
+                      maskImage: 'url("https://iili.io/3QeNmOX.png")',
+                      WebkitMaskRepeat: "no-repeat",
+                      maskRepeat: "no-repeat",
+                      WebkitMaskSize: "100% 100%",
+                      maskSize: "100% 50%",
+                      WebkitMaskPosition: "center bottom",
+                      maskPosition: "center bottom",
+                      pointerEvents: "none",
+                      zIndex: 0,
+                    }}
                   ></span>
-                  <span className="relative px-2 py-1" style={{ zIndex: 1 }}>
-                    smarter
-                  </span>
-                </span>{" "}
-                hiring
+
+                  {/* Visible text on top */}
+                  <span className="relative text-black z-10">smarter</span>
+                </span>
+
+                <span className="relative inline-block">&nbsp;hiring</span>
               </span>
             </h1>
 
             <motion.p
-              className="text-base sm:text-lg md:text-xl text-gray-600 mb-8 sm:mb-10 mx-auto whitespace-nowrap w-full"
+              className="text-base sm:text-lg md:text-xl font-onest text-gray-600 mb-8 sm:mb-5 mx-auto whitespace-nowrap w-full"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6, duration: 0.5 }}
@@ -39,22 +68,23 @@ const HeroSection = () => {
               A hiring platform that works the way you do.
             </motion.p>
 
-            {/* Buttons without hover effect */}
             <motion.div
-              className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6"
+              className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-2"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.7, duration: 0.5 }}
             >
               <Link
                 to="/pricing"
-                className="text-gray-600 hover:text-gray-900 transition-colors text-base sm:text-lg"
+                className="text-gray-900 border py-2 px-3 rounded-lg"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Try for free
               </Link>
               <Link
                 to="/contact"
-                className="bg-gray-900 text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-colors text-base sm:text-lg font-medium"
+                className="bg-gray-900 text-white px-4 py-3 rounded-lg text-sm font-semibold"
+                onClick={() => window.scrollTo(0, 0)}
               >
                 Get a demo
               </Link>
@@ -64,7 +94,7 @@ const HeroSection = () => {
 
         {/* Bottom Section - Dashboard Table */}
         <motion.div
-          className="flex justify-center"
+          className="flex justify-center z-50"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.5 }}
