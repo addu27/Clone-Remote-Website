@@ -2,9 +2,9 @@ import { User, Instagram, Linkedin, Github, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-white border-t border-gray-200 py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
+    <footer className="bg-gray-50 rounded-2xl  py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 mb-8 sm:mb-12 lg:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 mb-40 sm:mb-52 lg:mb-64">
           {/* Product */}
           <div>
             <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wide mb-4 sm:mb-6">
@@ -166,10 +166,12 @@ const Footer = () => {
         <hr className="border-gray-200" />
 
         {/* Newsletter */}
-        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between p-4 sm:p-6 lg:p-8 rounded-lg mb-8 sm:mb-12 space-y-6 lg:space-y-0">
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between p-4 sm:p-6 lg:p-8 rounded-lg mb-6 sm:mb-8 space-y-6 lg:space-y-0">
           <div className="flex items-center space-x-2 lg:mb-0">
             <User className="w-5 h-5 sm:w-6 sm:h-6 text-gray-900" />
-            <span className="text-lg sm:text-xl font-semibold text-gray-900">Remote</span>
+            <span className="text-lg sm:text-xl font-semibold text-gray-900">
+              Remote
+            </span>
           </div>
 
           <div className="text-center lg:text-left">
@@ -196,7 +198,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between pt-6 sm:pt-8 border-t border-gray-200 space-y-4 lg:space-y-0">
           <p className="text-xs sm:text-sm text-gray-600 text-center lg:text-left">
             © 2024 Remote by{" "}
-            <a href="#" className="underline hover:no-underline">
+            <a href="#" className="underline text-gray-900">
               Motiondrops
             </a>
             , a fully editable SaaS template

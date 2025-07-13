@@ -28,18 +28,43 @@ const About = () => {
             </div>
           </div>
 
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <h1
+            className="text-center font-[500] text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-semibold text-gray-900 mb-8 leading-tight"
+            style={{
+              fontFamily: '"Onest", "Onest Placeholder", sans-serif',
+              fontSize: "60px",
+              fontStyle: "normal",
+              letterSpacing: "-0.02em",
+              lineHeight: "1em",
+            }}
+          >
             Remote enables
             <br />
             the world to find
             <br />
             <span className="relative inline-block">
+              {/* Masked background */}
               <span
-                className="absolute inset-0 bg-limeSoft -skew-y-2 rounded-md"
-                style={{ zIndex: 0 }}
+                className="absolute inset-0 rounded-md -skew-y-2"
+                style={{
+                  background:
+                    "var(--token-50f7c55d-562d-4beb-9e4e-86ed7b4f818d, rgb(224, 255, 130))",
+                  WebkitMaskImage: 'url("https://iili.io/F74vt9a.png")',
+                  maskImage: 'url("https://iili.io/F74vt9a.png")',
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskSize: "100% 100%",
+                  maskSize: "100% 80%",
+                  WebkitMaskPosition: "center center",
+                  maskPosition: "center center",
+                  pointerEvents: "none",
+                  zIndex: 0,
+                }}
               ></span>
+
+              {/* Visible text */}
               <span
-                className="relative text-gray-900 font-bold"
+                className="relative text-gray-900"
                 style={{ zIndex: 1 }}
               >
                 the best{" "}
@@ -292,9 +317,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-gray-900 mb-1">
-                David Wilson
-              </h3>
+              <h3 className="text-lg text-gray-900 mb-1">David Wilson</h3>
               <p className="text-sm text-gray-600 mb-3">Founder & CEO</p>
               <div className="flex items-center justify-start space-x-2">
                 <a
@@ -327,9 +350,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-gray-900 mb-1">
-                Jessica Hayes
-              </h3>
+              <h3 className="text-lg text-gray-900 mb-1">Jessica Hayes</h3>
               <p className="text-sm text-gray-600 mb-3">Co-founder & CFO</p>
               <div className="flex items-center justify-start space-x-2">
                 <a
@@ -356,9 +377,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-gray-900 mb-1">
-                Constanza Perez
-              </h3>
+              <h3 className="text-lg text-gray-900 mb-1">Constanza Perez</h3>
               <p className="text-sm text-gray-600 mb-3">Head of Product</p>
               <div className="flex items-center justify-start space-x-2">
                 <a
@@ -385,9 +404,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-gray-900 mb-1">
-                Meera Desai
-              </h3>
+              <h3 className="text-lg text-gray-900 mb-1">Meera Desai</h3>
               <p className="text-sm text-gray-600 mb-3">Head of Engineering</p>
               <div className="flex items-center justify-start space-x-2">
                 <a
@@ -420,9 +437,7 @@ const About = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg text-gray-900 mb-1">
-                Benjamin Weber
-              </h3>
+              <h3 className="text-lg text-gray-900 mb-1">Benjamin Weber</h3>
               <p className="text-sm text-gray-600 mb-3">
                 Founding Backend Engineer
               </p>

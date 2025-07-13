@@ -5,7 +5,7 @@ const GlobalSection = () => {
     <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
       <div className="max-w-[1200px] mx-auto">
         <div className="flex text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-12 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl text-gray-900 mb-12 leading-tight">
             Remote is the global &nbsp;&nbsp;&nbsp; <br />
             payroll platform leader
           </h2>
@@ -29,7 +29,7 @@ const GlobalSection = () => {
               </div>
             </div>
 
-            <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-4">
               You're in control
             </h3>
             <p className="text-gray-600 text-sm sm:text-base">
@@ -48,9 +48,17 @@ const GlobalSection = () => {
 
               {/* Card 1 - Emma */}
               <div className="absolute left-1/2 transform -translate-x-1/2 bottom-16 sm:bottom-20 w-[100%] sm:w-[80%] bg-white px-4 py-3 rounded-xl shadow-md flex items-center justify-between space-x-3">
-                <span className="text-sm sm:text-base font-semibold text-gray-900">
-                  Emma
-                </span>
+                <div className="flex flex-row gap-2">
+                  <img
+                    src="./home-women.avif"
+                    alt=""
+                    className="h-8 w-8 rounded-2xl"
+                  />
+                  <span className="text-sm sm:text-base font-semibold text-gray-900">
+                    Emma
+                  </span>
+                </div>
+
                 <button className="text-white bg-gray-900 text-xs sm:text-sm px-3 py-1 rounded-full font-medium">
                   Onboard
                 </button>
@@ -58,10 +66,18 @@ const GlobalSection = () => {
 
               {/* Card 2 - Jonathan */}
               <div className="absolute left-1/2 transform -translate-x-1/2 bottom-4 w-[100%] sm:w-[80%] bg-white px-4 py-3 rounded-xl shadow-md flex items-center justify-between space-x-3">
-                <span className="text-sm sm:text-base font-semibold text-gray-900">
-                  Jonathan
-                </span>
-                <span className="text-gray-500 border text-xs sm:text-sm font-medium px-3 py-1 rounded-lg">
+                <div className="flex flex-row gap-2">
+                  <img
+                    src="./home-men.avif"
+                    alt=""
+                    className="h-8 w-8 rounded-2xl"
+                  />
+                  <span className="text-sm sm:text-base font-semibold text-gray-900">
+                    Jonathan
+                  </span>
+                </div>
+
+                <span className="text-gray-500 border text-xs sm:text-sm font-medium px-2 rounded-lg">
                   Starts tomorrow
                 </span>
               </div>
@@ -77,17 +93,20 @@ const GlobalSection = () => {
           </div>
 
           {/* Tailored for 150+ countries */}
-          <div className="text-center px-4">
+          <div className="px-4">
             <div className="relative bg-white rounded-3xl p-6 sm:p-8 mb-6 overflow-hidden h-[26rem] sm:h-[28rem]">
               <img
                 src="./home-men-3.avif"
                 alt="Alex"
                 className="absolute inset-0 w-full h-full object-cover rounded-2xl"
               />
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white rounded-xl px-6 py-2 shadow-lg border w-[80%] sm:w-[60%]">
-                <div className="text-lg font-semibold text-gray-900 italic text-center">
-                  Alex
-                </div>
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white rounded-xl px-3 p-2 shadow-lg border w-[80%] sm:w-[90%] flex items-center justify-between">
+                <img src="./icon-earth.png" alt="" className="h-4 w-4"/>
+                <input
+                  type="text"
+                  placeholder="Search country..."
+                  className="w-full px-4 py-2 focus:outline-none focus:ring-2 focus:ring-lime-400 text-sm"
+                />
               </div>
             </div>
 

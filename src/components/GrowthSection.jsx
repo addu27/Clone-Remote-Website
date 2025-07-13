@@ -19,7 +19,7 @@ const GrowthSection = () => {
 
             <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
                   <Users className="w-6 h-6 text-gray-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Team alignment</h3>
@@ -29,8 +29,8 @@ const GrowthSection = () => {
               </div>
 
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                  <TrendingUp className="w-6 h-6 text-gray-600" />
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
+                  <img src="./icon-route.png" alt="" className='h-6 w-6' />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Skills development</h3>
                 <p className="text-gray-600 text-sm">
@@ -39,8 +39,8 @@ const GrowthSection = () => {
               </div>
 
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                  <BarChart3 className="w-6 h-6 text-gray-600" />
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
+                  <TrendingUp className="w-6 h-6 text-gray-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Progress tracking</h3>
                 <p className="text-gray-600 text-sm">
@@ -49,7 +49,7 @@ const GrowthSection = () => {
               </div>
 
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
                   <Clock className="w-6 h-6 text-gray-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">Performance insights</h3>
@@ -69,10 +69,10 @@ const GrowthSection = () => {
                 </div>
                 <div>
                   <span className="font-medium text-gray-900 text-sm sm:text-base">Software Developer</span>
-                  <span className="ml-2 text-sm text-gray-500">6</span>
+                  <span className="ml-2 bg-gray-100 py-0.5 px-2 rounded-3xl text-sm text-gray-900">6</span>
                 </div>
               </div>
-              <ChevronRight className="w-5 h-5 text-gray-400" />
+              <ChevronRight className="w-5 h-5 text-gray-900" />
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-4 flex items-center justify-between hover:shadow-md transition-shadow">
@@ -82,10 +82,10 @@ const GrowthSection = () => {
                 </div>
                 <div>
                   <span className="font-medium text-gray-900 text-sm sm:text-base">Lead Software Developer</span>
-                  <span className="ml-2 text-sm text-gray-500">8</span>
+                  <span className="ml-2 bg-gray-100 py-0.5 px-2 rounded-3xl text-sm text-gray-900">8</span>
                 </div>
               </div>
-              <ChevronRight className="w-5 h-5 text-gray-400" />
+              <ChevronRight className="w-5 h-5 text-gray-900" />
             </div>
 
             <div className="bg-white border border-gray-200 rounded-xl p-4">
@@ -96,10 +96,10 @@ const GrowthSection = () => {
                   </div>
                   <div>
                     <span className="font-medium text-gray-900 text-sm sm:text-base">Product Owner</span>
-                    <span className="ml-2 text-sm text-gray-500">5</span>
+                    <span className="ml-2 bg-gray-100 py-0.5 px-2 rounded-3xl text-sm text-gray-900">5</span>
                   </div>
                 </div>
-                <ChevronDown className="w-5 h-5 text-gray-400" />
+                <ChevronDown className="w-5 h-5 text-gray-900" />
               </div>
               
               <div className="space-y-3 pl-8 sm:pl-11">
@@ -120,7 +120,7 @@ const GrowthSection = () => {
                     <span className="text-sm text-gray-600">Skill Development Courses</span>
                     <span className="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">Optional</span>
                   </div>
-                  <div className="w-4 h-4 bg-gray-900 rounded-full"></div>
+                  <div className="w-4 h-4 border rounded-full"></div>
                 </div>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">

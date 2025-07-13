@@ -3,12 +3,12 @@ import { RefreshCw, Users, FileText, BarChart3, Settings } from "lucide-react";
 
 const ActivityFeedSection = () => {
   return (
-    <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+    <section className="bg-white py-12 sm:py-16 lg:py-8 px-4 sm:px-6">
       <div className="max-w-[1200px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left side - Activity feed mockup */}
-          <div className="bg-limeSoft p-6 sm:p-8 rounded-3xl order-2 lg:order-1">
-            <div className="flex flex-col gap-5 sm:p-6 ">
+          <div className="bg-limeSoft p-[24px] sm:p-[32px] lg:p-[48px] rounded-3xl order-2 lg:order-1">
+            <div className="flex flex-col gap-3 ">
               {/* Header */}
               <div className="flex bg-white p-4  sm:p-6 rounded-2xl shadow items-center justify-between">
                 <div className="flex items-center space-x-3">
@@ -155,14 +155,14 @@ const ActivityFeedSection = () => {
           </div>
 
           {/* Right side - Content */}
-          <div className="order-1 lg:order-2 flex flex-col justify-between min-h-[550px] px-4 sm:px-6 lg:px-8">
+          <div className="order-1 lg:order-2 flex flex-col justify-between min-h-[550px]">
             {/* Top Section */}
             <div>
               <div className="text-sm text-gray-500 uppercase tracking-wide mb-4">
                 REAL-TIME UPDATES
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 leading-tight">
+              <h2 className="text-3xl sm:text-4xl text-gray-900 mb-8 leading-tight">
                 Empowering your
                 <br />
                 talent pipeline
@@ -172,8 +172,8 @@ const ActivityFeedSection = () => {
             {/* Bottom Section */}
             <div className="grid sm:grid-cols-2 gap-6 sm:gap-8">
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                  <Users className="w-6 h-6 text-gray-600" />
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
+                  <img src="./icon-coin.png" alt="" className="w-6 h-6"/>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Payroll efficiency
@@ -184,8 +184,8 @@ const ActivityFeedSection = () => {
               </div>
 
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
-                  <Settings className="w-6 h-6 text-gray-600" />
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
+                  <img src="./icon-change-user.png" alt="" className="w-6 h-6"/>
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
                   Talent management
@@ -196,7 +196,7 @@ const ActivityFeedSection = () => {
               </div>
 
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
                   <FileText className="w-6 h-6 text-gray-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -208,7 +208,7 @@ const ActivityFeedSection = () => {
               </div>
 
               <div>
-                <div className="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center mb-4">
+                <div className="w-12 h-12 flex items-center justify-start mb-4">
                   <BarChart3 className="w-6 h-6 text-gray-600" />
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">

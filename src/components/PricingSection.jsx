@@ -8,7 +8,32 @@ const PricingSection = () => {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             A plan for{" "}
-            <span className="bg-limeSoft px-2 py-1 rounded-lg">anyone</span>.
+            <span className="relative inline-block">
+              <span
+                className="absolute block rounded-lg"
+                style={{
+                  left: "52%",
+                  top: "45%",
+                  transform: "translate(-50%, -36%)",
+                  zIndex: 1,
+                  width: "103%",
+                  height: "33.6px",
+                  background:
+                    "var(--token-50f7c55d-562d-4beb-9e4e-86ed7b4f818d, rgb(224, 255, 130))",
+                  WebkitMaskImage: 'url("https://iili.io/F74vt9a.png")',
+                  maskImage: 'url("https://iili.io/F74vt9a.png")',
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskSize: "100% 100%",
+                  maskSize: "100% 100%",
+                  WebkitMaskPosition: "center",
+                  maskPosition: "center",
+                  pointerEvents: "none",
+                }}
+              ></span>
+              <span className="relative z-10 text-gray-900">anyone</span>
+            </span>
+            .
             <br />
             Anytime.
           </h2>

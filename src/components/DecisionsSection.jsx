@@ -8,13 +8,37 @@ const DecisionsSection = () => {
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
             Make{" "}
-            <span className="bg-limeSoft px-2 py-1 rounded-lg">actionable</span>
+            <span className="relative inline-block">
+              <span
+                className="absolute block rounded-lg"
+                style={{
+                  left: "52%",
+                  top: "45%",
+                  transform: "translate(-50%, -36%)",
+                  zIndex: 1,
+                  width: "103%",
+                  height: "33.6px",
+                  background:
+                    "var(--token-50f7c55d-562d-4beb-9e4e-86ed7b4f818d, rgb(224, 255, 130))",
+                  WebkitMaskImage: 'url("https://iili.io/F74vt9a.png")',
+                  maskImage: 'url("https://iili.io/F74vt9a.png")',
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskSize: "100% 100%",
+                  maskSize: "100% 100%",
+                  WebkitMaskPosition: "center",
+                  maskPosition: "center",
+                  pointerEvents: "none",
+                }}
+              ></span>
+              <span className="relative z-10 text-gray-900">actionable</span>
+            </span>
             <br />
             decisions simpler
           </h2>
 
           <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto">
-            Focus on what matters - let us handle the busywork while you build
+            Focus on what matters - let us handle the <br /> busywork while you build
             better relationships.
           </p>
         </div>
@@ -89,7 +113,8 @@ const DecisionsSection = () => {
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
                       <div className="text-sm font-medium max-w-[12rem] opacity-100">
-                        2 years working on healthcare and improving <b>Leadership skills</b> 
+                        2 years working on healthcare and improving{" "}
+                        <b>Leadership skills</b>
                       </div>
                     </div>
                   </div>
@@ -101,7 +126,7 @@ const DecisionsSection = () => {
                   <div>
                     <div className="flex items-center space-x-2 mb-2">
                       <div className="text-sm font-medium max-w-[12rem] opacity-100">
-                        Masters in <b>Computer Science</b> 
+                        Masters in <b>Computer Science</b>
                       </div>
                     </div>
                   </div>
@@ -111,7 +136,7 @@ const DecisionsSection = () => {
               <div className="absolute top-4 sm:top-8 right-4 sm:right-8 space-y-3 hidden sm:block">
                 <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3 opacity-30">
                   <img
-                    src="https:/.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=100"
+                    src="./home-women-2.avif"
                     alt="Danielle"
                     className="w-8 h-8 rounded-full object-cover"
                   />
@@ -127,7 +152,7 @@ const DecisionsSection = () => {
 
                 <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3 opacity-50">
                   <img
-                    src="https:/.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=100"
+                    src="./feature-men.avif"
                     alt="Dennis"
                     className="w-8 h-8 rounded-full object-cover"
                   />
@@ -141,7 +166,7 @@ const DecisionsSection = () => {
 
                 <div className="bg-white rounded-lg p-3 shadow-lg flex items-center space-x-3 opacity-70">
                   <img
-                    src="https:/.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=100"
+                    src="./home-women.avif"
                     alt="Camilla"
                     className="w-8 h-8 rounded-full object-cover"
                   />
