@@ -13,11 +13,31 @@ const Contact = () => {
   };
 
   const faqs = [
-    "Can I integrate Remote with my existing systems?",
-    "How secure is my company's data?",
-    "What kind of support do you offer?",
-    "Can Remote help with performance management?",
-    "Is Remote right for my business?",
+    {
+      question: "Can I integrate Remote with my existing systems?",
+      answer:
+        "Absolutely! We play nice with all major payroll and accounting tools like QuickBooks, ADP, and Xero. Our flexible API means we can connect to pretty much anything. Need a custom integration? We've got you covered.",
+    },
+    {
+      question: "How secure is my company's data?",
+      answer:
+        "Super secure! We use bank-level encryption, multi-factor authentication, and meet all major compliance standards (GDPR, SOC 2). Think of us as the Fort Knox of HR software – your data is locked up tight.",
+    },
+    {
+      question: "What kind of support do you offer?",
+      answer:
+        "We're here for you 24/7! Live chat, email, phone support, weekly training webinars, and a massive online help center. No matter what you need, we're just a click or call away.",
+    },
+    {
+      question: "Can Remote help with performance management?",
+      answer:
+        "You bet! Track goals, do 360-degree reviews, identify talent, and create development plans – all in one place. We make performance management actually feel helpful, not like a chore.",
+    },
+    {
+      question: "Is Remote right for my business?",
+      answer:
+        "Whether you're a scrappy startup or a global enterprise, we scale with you. Pick the features you need, pay for what you use. We're flexible, affordable, and ready to grow with your team.",
+    },
   ];
 
   return (
@@ -27,8 +47,7 @@ const Contact = () => {
       {/* Hero Section */}
       <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
         <div className="max-w-[1200px] mx-auto text-center">
-          {/* Chat Icon */}
-          <div className="mb-8 sm:mb-12">
+          <div className="mb-2 sm:mb-3">
             <div className="w-28 h-24 sm:w-32 sm:h-32 mx-auto flex items-center justify-center">
               <motion.img
                 src="./contact-main.png"
@@ -42,7 +61,7 @@ const Contact = () => {
           </div>
 
           <motion.h1
-            className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-gray-900 mb-8 leading-tight"
+            className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-gray-900 mb-8 leading-tight"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.5 }}
@@ -52,9 +71,8 @@ const Contact = () => {
             support help you today?
           </motion.h1>
 
-          {/* Support Team Avatars */}
           <motion.div
-            className="flex items-center justify-center mb-6"
+            className="flex items-center justify-center mb-12 mt-12"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -89,9 +107,8 @@ const Contact = () => {
             </div>
           </motion.div>
 
-          {/* Contact Email */}
           <motion.div
-            className="inline-block bg-gray-100 text-gray-700 px-4 py-2 rounded-lg text-sm"
+            className="inline-block border text-gray-900 px-4 py-2 rounded-lg text-sm"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.5 }}
@@ -102,24 +119,24 @@ const Contact = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-white py-12 sm:py-16 lg:py-20 px-4 sm:px-6">
+      <section className="bg-white py-8 sm:py-12 lg:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
+          <div className="flex flex-wrap lg:flex-nowrap justify-between gap-10">
             {/* Left side - FAQ */}
-            <div>
+            <div className="flex-1 min-w-0">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-8 leading-tight">
                 FAQ's
               </h2>
 
               <div className="space-y-4">
                 {faqs.map((faq, index) => (
-                  <div key={index} className="border-b border-gray-200">
+                  <div key={index}>
                     <button
                       onClick={() => toggleFaq(index)}
                       className="w-full flex items-center justify-between py-4 text-left hover:text-gray-600 transition-colors"
                     >
                       <span className="text-lg font-medium text-gray-900">
-                        {faq}
+                        {faq.question}
                       </span>
                       <ChevronRight
                         className={`w-5 h-5 text-gray-400 transition-transform ${
@@ -128,12 +145,9 @@ const Contact = () => {
                       />
                     </button>
                     {openFaq === index && (
-                      <div className="pb-4">
-                        <p className="text-gray-600">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris.
+                      <div className="pb-4 pr-6">
+                        <p className="text-gray-600 text-base leading-relaxed">
+                          {faq.answer}
                         </p>
                       </div>
                     )}
@@ -142,28 +156,24 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Right side - Team Photo Testimonial */}
-            <div className="lg:pl-8">
-              <div className="bg-gray-900 rounded-3xl p-6 sm:p-8 text-white relative overflow-hidden">
+            {/* Right side - Testimonial */}
+            <div className="w-[320px] h-[420px] shrink-0 bg-gray-900 text-white rounded-2xl overflow-hidden shadow-md flex flex-col">
+              <div className="p-4 w-full flex-1 flex flex-col">
                 <img
-                  src="https:/.pexels.com/photos/1595391/pexels-photo-1595391.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="Happy team"
-                  className="w-full h-48 sm:h-56 rounded-2xl object-cover mb-6"
+                  src="./pricing-group.avif"
+                  alt="James Smith"
+                  className="w-full h-60 rounded-2xl object-cover"
                 />
-
-                <blockquote className="text-lg sm:text-xl mb-6 leading-relaxed">
-                  "We're looking at savings in the hundreds of thousands, not
-                  just in direct costs but in time and efficiency too."
-                </blockquote>
-
-                <div>
-                  <div className="font-semibold text-lg">James Smith</div>
-                  <div className="text-gray-300">CFO @Remote</div>
+                <div className="p-4 flex-1 flex flex-col justify-between">
+                  <p className="text-sm mb-4">
+                    "We're looking at savings in the hundreds of thousands, not
+                    just <br />in direct costs but in time and <br /> efficiency too."
+                  </p>
+                  <div>
+                    <div className="font-semibold text-sm">James Smith</div>
+                    <div className="text-gray-400 text-xs">CFO @Remote</div>
+                  </div>
                 </div>
-
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -right-4 w-24 h-24 bg-limeSoft rounded-full opacity-20"></div>
-                <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-limeSoft rounded-full opacity-10"></div>
               </div>
             </div>
           </div>
