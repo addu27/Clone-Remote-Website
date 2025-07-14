@@ -100,7 +100,16 @@ const HeroSection = () => {
           transition={{ delay: 0.8, duration: 0.5 }}
         >
           <div className="flex flex-row bg-gray-100 rounded-3xl border border-gray-200 overflow-hidden p-2 w-full max-w-1xl">
-            <div className="flex flex-col justify-between items-center pt-4 pb-4 rounded-l-lg w-[52px] bg-white border border-gray-100 overflow-hidden w-10 max-w-6xl">
+            <div
+              className="flex flex-col justify-between items-center pt-4 pb-4 rounded-l-2xl w-[52px] bg-white border border-gray-100 shadow overflow-hidden w-10 max-w-6xl"
+              style={{
+                boxShadow: `
+      0 -4px 6px -1px rgba(0, 0, 0, 0.05),  /* top */
+     -4px 0 6px -1px rgba(0, 0, 0, 0.05),   /* left */
+      0 4px 6px -1px rgba(0, 0, 0, 0.05)    /* bottom */
+    `,
+              }}
+            >
               <img
                 src="./icon-user.png"
                 alt="icon-user"
@@ -113,7 +122,16 @@ const HeroSection = () => {
               />
             </div>
 
-            <div className="bg-white rounded-r-lg border border-gray-200 overflow-hidden w-full max-w-6xl">
+            <div
+              className="bg-white rounded-r-2xl border border-gray-200 overflow-hidden w-full max-w-6xl"
+              style={{
+                boxShadow: `
+      0 -4px 6px -1px rgba(0, 0, 0, 0.05), /* top */
+      4px 0 6px -1px rgba(0, 0, 0, 0.05),  /* right */
+      0 4px 6px -1px rgba(0, 0, 0, 0.05)   /* bottom */
+    `,
+              }}
+            >
               {/* Dashboard header */}
               <div className="bg-white border border-gray-100 p-2 sm:p-2">
                 <div className="flex items-center justify-between">
