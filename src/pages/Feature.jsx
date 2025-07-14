@@ -31,9 +31,22 @@ const Feature = () => {
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-gray-900 mb-6 leading-tight">
             <span className="relative inline-block">
-              <span
-                className="absolute inset-0 bg-limeSoft -skew-y-2 rounded-md"
-                style={{ zIndex: 0 }}
+               <span
+                className="absolute inset-0 rounded-md -skew-y-2"
+                style={{
+                  background:
+                    "var(--token-50f7c55d-562d-4beb-9e4e-86ed7b4f818d, rgb(224, 255, 130))",
+                  WebkitMaskImage: 'url("https://iili.io/F74vt9a.png")',
+                  maskImage: 'url("https://iili.io/F74vt9a.png")',
+                  WebkitMaskRepeat: "no-repeat",
+                  maskRepeat: "no-repeat",
+                  WebkitMaskSize: "100% 100%",
+                  maskSize: "100% 80%",
+                  WebkitMaskPosition: "center center",
+                  maskPosition: "center center",
+                  pointerEvents: "none",
+                  zIndex: 0,
+                }}
               ></span>
               <span className="relative px-2 py-1" style={{ zIndex: 1 }}>
                 More than
